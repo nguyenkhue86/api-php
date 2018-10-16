@@ -22,7 +22,7 @@
         <tbody>
             <?php for($i=0;$i<sizeof($movies);$i++) {?>
             <tr>
-                <th scope="row"><?php echo $movies[$i]->id?></th>
+                <th scope="row"><?php echo $i+1?></th>
                 <td><?php echo $movies[$i]->movie_name?></td>
                 <td><?php echo $movies[$i]->date_of_manufacture?></td>
                 <td><?php echo $movies[$i]->duration?></td>
