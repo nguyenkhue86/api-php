@@ -51,6 +51,18 @@
             $metadata->setType("movies");
             print_r($metadata->getMetaData());
         }
+        elseif(isset($_GET["T"]))
+        {
+            $id = $_GET["T"];
+            $api = new database();
+            $api->setQuery("Select m.id,m.movie_name,m.trailer,m.movie_content,m.avatar_movie_url,m.background,m.date_of_manufacture,m.year_of_manufacture,m.duration,m.quality,m.language,m.state,m.view,m.country_id,m.company_id,m.movie_type from movies m where m.movie_type = $id order by date_of_manufacture DESC");
+            $data=$api->loadAllRows();
+            $metadata= new API_V2();
+            $metadata->setData($data);
+            $metadata->setCount(sizeof($data));
+            $metadata->setType("movies");
+            print_r($metadata->getMetaData());
+        }
         else {
             $api = new database();
             $api->setQuery("Select * from kind");
