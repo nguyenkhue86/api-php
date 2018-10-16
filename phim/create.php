@@ -57,11 +57,6 @@
                     <label for="exampleInputEmail1">Chất Lượng</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Quality">
                 </div>
-                
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Phân Giải</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Resolution">
-                </div>
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Ngôn Ngữ</label>

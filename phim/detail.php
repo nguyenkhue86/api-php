@@ -62,15 +62,6 @@
 
         <div class="row">
             <div class="col col-4">
-                <p class="title">Độ Phân Giải</p>
-            </div> 
-            <div class="col col-8">
-                <p class="content"><?php echo $movie->resolution ?></p>
-            </div>        
-        </div>
-
-        <div class="row">
-            <div class="col col-4">
                 <p class="title">Ngôn Ngữ</p>
             </div> 
             <div class="col col-8">
