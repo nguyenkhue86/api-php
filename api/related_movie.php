@@ -26,6 +26,21 @@
         $metadata->setType("movies");
         print_r($metadata->getMetaData());
         // echo $api->_sql;
-    } else {
+    }
+    elseif(isset($_GET["id"],$_GET["movie"]))
+    {
+        $id = $_GET["id"];
+        $movie = $_GET["movie"];
+        $api = new database();
+        $api->setQuery("select * from movie_season ms where ms.movie_id = $movie and ms.season != $id");
+        $data=$api->loadAllRows();
+        $metadata= new API_V2();
+        $metadata->setData($data);
+        $metadata->setCount(sizeof($data));
+        $metadata->setType("movies");
+        print_r($metadata->getMetaData());
+        // echo $api->_sql;
+    }
+     else {
         echo 'Request param not exist!';
     }

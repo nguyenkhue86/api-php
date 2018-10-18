@@ -14,6 +14,17 @@
         $metadata->setType("movie_season");
         print_r($metadata->getMetaData());
     }
+    elseif(isset($_GET["id"])) {
+        $id = $_GET["id"];
+        $api = new database();
+        $api->setQuery("SELECT * FROM `movie_season` WHERE id = $id");
+        $data=$api->loadRow();
+        $metadata= new API_V2();
+        $metadata->setData($data);
+        $metadata->setCount(1);
+        $metadata->setType("movie_season");
+        print_r($metadata->getMetaData());
+    }
 
     
 ?>
