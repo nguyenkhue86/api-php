@@ -1,11 +1,10 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+    
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $postdata = file_get_contents("php://input");
-        $request = json_decode($postdata);
+        $request = json_decode(file_get_contents("php://input"));
         
         $api = new database();
         $api->setQuery("INSERT INTO `rating`(`id`, `movie_id`, `rate`, `comment`, `email`, `comment_date`) VALUES (0,?,?,?,?,?)");
@@ -43,4 +42,6 @@
         }
     }
     
+
+    ?>
 

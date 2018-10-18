@@ -1,7 +1,7 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+
     if(isset($_GET["actor"])) {
         $id = $_GET["actor"];
         $api = new database();
@@ -42,3 +42,5 @@
         $metadata->setType("actors");
         print_r($metadata->getMetaData());
     }
+
+?>

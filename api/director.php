@@ -1,7 +1,7 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+    
 
     if(isset($_GET["director"])) {
         $id = $_GET["director"];
@@ -35,3 +35,6 @@
         $metadata->setType("director");
         print_r($metadata->getMetaData());
     }
+
+    
+?>

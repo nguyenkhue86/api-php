@@ -1,4 +1,5 @@
 <?php
+    require_once '../core/access_control.php';
     class database{
         public $_dbh = '';
         public $_sql = '';
