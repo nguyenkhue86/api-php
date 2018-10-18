@@ -1,7 +1,7 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+    
     
     if(isset($_GET["id"]))
     {
@@ -23,3 +23,6 @@
     } else {
         echo 'Request param not exist!';
     }
+
+    
+?>

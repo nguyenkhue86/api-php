@@ -1,7 +1,7 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+    
 
     if(isset($_GET["movie_id"])) {
         $movie_id = $_GET["movie_id"];
@@ -14,3 +14,6 @@
         $metadata->setType("movie_season");
         print_r($metadata->getMetaData());
     }
+
+    
+?>

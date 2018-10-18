@@ -1,7 +1,7 @@
 <?php
     include '../core/database.php';
     include '../core/api_v2.php';
-    include '../core/access_control.php';
+    
     
     if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         if(isset($_GET["kind"]))
@@ -51,3 +51,6 @@
             print_r($metadata->getMetaData());
         }
     }
+
+
+    ?>
