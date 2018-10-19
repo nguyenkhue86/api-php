@@ -1,5 +1,5 @@
 <?php
-include '../core/database.php';
+require_once '../core/database.php';
 class controller extends database {
 
     //get current url

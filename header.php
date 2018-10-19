@@ -9,6 +9,6 @@
 </head>
 <body>
     <div id="container">
-    <?php include 'navbar.php';?>
+    <?php require_once 'navbar.php';?>
 
     

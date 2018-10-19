@@ -1,5 +1,5 @@
-<?php include '../header.php';?>
-<?php include '../function.php';?>
+<?php require_once '../header.php';?>
+<?php require_once '../function.php';?>
 <?php $controller = new controller();?> 
 <?php $movies=$controller->getAllMovies();?>
 <?php $url = $controller->getCurentUrl();?>

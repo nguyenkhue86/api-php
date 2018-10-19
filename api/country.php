@@ -1,6 +1,6 @@
 <?php
-    include '../core/database.php';
-    include '../core/api_v2.php';
+    require_once '../core/database.php';
+    require_once '../core/api_v2.php';
     
     
     if ($_SERVER['REQUEST_METHOD'] === 'GET'){
