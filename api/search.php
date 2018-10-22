@@ -1,7 +1,7 @@
 <?php
-    include '../core/database.php';
-    include '../core/api_v2.php';
-    include '../core/access_control.php';
+    require_once '../core/database.php';
+    require_once '../core/api_v2.php';
+    require_once '../core/access_control.php';
     if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
         if(isset($_GET["M"]))
